@@ -3,9 +3,9 @@ var router = require('./router');
 var requestHandlers = require('./requestHandlers');
 
 var handle = {}
-handle['/'] = requestHandlers.iniciar;
-handle['/iniciar'] = requestHandlers.iniciar;
-handle['/subir'] = requestHandlers.subir;
-handle['/favicon.ico'] = requestHandlers.icono;
+handle['/'] = requestHandlers.start;
+handle['/start'] = requestHandlers.start;
+handle['/upload'] = requestHandlers.upload;
+handle['/favicon.ico'] = requestHandlers.searchIcon;
 
-server.iniciar(router.route, handle);
+server.start(router.route, handle);
